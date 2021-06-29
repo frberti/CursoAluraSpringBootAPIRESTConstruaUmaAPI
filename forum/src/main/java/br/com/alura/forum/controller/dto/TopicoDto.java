@@ -44,7 +44,7 @@ public class TopicoDto {
 	//Para cada objeto Topico topico, instanciar um TopicoDto topicoDto
 	//Retornar topicosDto
 	
-	public List<TopicoDto> converter(List<Topico> topicos) {
+	public static List<TopicoDto> converter(List<Topico> topicos) {
 		List<TopicoDto> topicosDto = new ArrayList<TopicoDto>();
 		for (Topico topico : topicos) {
 			TopicoDto topicoDto = new TopicoDto(topico);
